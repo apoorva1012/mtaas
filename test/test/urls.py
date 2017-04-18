@@ -22,5 +22,5 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^users/', api.UserList.as_view()),
-    url(r'^users/(?P<pk>[0-9]+)/$', api.UserDetail.as_view()),
+    url(r'^user/(?P<pk>[0-9]+)/$', api.UserDetail.as_view()),
 ]
